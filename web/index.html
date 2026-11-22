@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="AeroNest - 3D Flight Experience">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="AeroNest">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>AeroNest - 3D Flight Booking</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    body {
+      background-color: #F7F8FC;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #14132A;
+    }
+    .spinner {
+      width: 44px;
+      height: 44px;
+      border: 3.5px solid #FFE5D4;
+      border-top-color: #FF7A45;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container" id="loading">
+    <div class="spinner"></div>
+    <p style="margin-top: 14px; font-weight: 700; font-size: 14px; letter-spacing: -0.2px;">Menyiapkan AeroNest ✈️</p>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
